@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Video and Audio</title>
+</head>
+<body>
+    <!-- Media: Đa phương tiện -->
+    <!-- Video và Audio -->
+    <!-- Video: nó sẽ dùng để hiển thị ra dưới dạng video (phim, trò chơi,.. ). Định dạng: .mp4 -->
+    <!-- Audio: nó sẽ dùng để phát nhạc (nhacuatui, mp3player,.. ). Định dạng: .mp3-->
+
+    <!-- Thẻ video: thẻ dùng để hiển thị ra 1 dạng video tương ứng -->
+    <!-- thuộc tính: width: quy định về chiều rộng, height: quy định về chiều cao-->
+    <!-- Thuộc tính controls: hiển thị lên bảng điều khiển. -->
+    <!-- Thẻ source: thẻ mô tả đường dẫn của video -->
+    <!-- Thuộc tính src: nơi để đường dẫn của video -->
+    <!-- Thuộc tính type: định dạng video-->
+
+    <video width="320" height="240" controls autoplay loop>
+        <source src="movie.mp4" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+      Trình duyệt của bạn không hỗ trợ thẻ video.
+    </video>
+
+    <audio width="320" height="240" controls>
+        <source src="movie.mp3" type="video/mp3">
+        <source src="movie.ogg" type="video/ogg">
+        <source src="movie.wav" type="video/wav">
+      Trình duyệt của bạn không hỗ trợ thẻ video.
+    </audio>
+</body>
+</html>
