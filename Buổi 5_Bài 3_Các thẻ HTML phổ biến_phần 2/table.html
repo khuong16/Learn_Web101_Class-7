@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+<body>
+    <!-- Thẻ table: là thẻ dùng để hiển thị cho biết được đây là dùng để hiển thị ra bảng -->
+    <table border="1">
+        <!-- thẻ tr: thẻ dùng để minh họa ra các hàng của bảng -->
+        <!-- thẻ th: thẻ dùng để mô tả tiêu đề của bảng. -->
+        <!-- tiêu đề: chữ đen, in đậm, cỡ chữ to. -->
+        <tr>
+            <th>Column One</th>
+            <th>Column Two</th>
+            <th>Column Three</th>
+        </tr>
+        <!-- thẻ tr: là thẻ dùng để minh họa ra các hàng của bảng -->
+        <!-- Bảng có bao nhiêu hàng thì sẽ có bất nhiêu tr -->
+        <!-- VD: trong bảng có 5 hàng thì sẽ có 5 thẻ tr và ngược lại -->
+        <tr>
+            <!-- thẻ td: là thẻ dùng để hiển thị cột trong hàng của bảng. -->
+            <!-- Trong hàng có bấy nhiều cột thì sẽ có bấy nhiêu td -->
+            <!-- VD: trong thẻ tr có 5 td => hàng đó sẽ có 5 cột và ngược lại-->
+            <!-- thẻ td sẽ là thẻ mô tả nội dung của bảng -->
+            <td>One</td>
+            <td>Two</td>
+            <td>Three</td>
+        </tr>
+        <tr>
+            <td>Four</td>
+            <td>Five</td>
+            <td>Six</td>
+        </tr>
+        <tr>
+            <td>Seven</td>
+            <td>Eight</td>
+            <td>Nine </td>
+        </tr>
+    </table>
+
+    <br><br>
+
+    <!--- Gộp ô -->
+    <!-- Gộp hàng: rowspan, truyền vào giá trị mà mình muốn gộp -->
+    <!-- VD: gộp 2 hàng, rowspan là bằng 2, gộp 3 hàng, rowspan bằng 3-->
+    
+    <!-- Gộp cột: colspan, truyền vào giá trị mà mọi người muốn gộp -->
+    <!-- VD: gộp 3 cột, colspan là bằng 3,.. -->
+    <table border="1">
+        <tr>
+            <th>Child's Name: </th>
+            <th>Parent's Name: </th>
+        </tr>
+        <tr>
+            <td rowspan="2">Catherine</td>
+            <td>Michael McCarthy</td>
+        </tr>
+        <tr>
+            <td>Colleen McCarthy</td>
+        </tr>
+        <tr>
+            <td>Maggie</td>
+            <td>Sheila McGee</td>
+        </tr>
+    </table>
+</body>
+</html>
