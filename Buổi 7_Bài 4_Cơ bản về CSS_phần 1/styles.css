@@ -21,3 +21,31 @@ a {
     color: #00ff1a;
     background-color: #FF0000;
 }
+
+p {
+    /* Font-weight: giúp cho chữ có độ "nặng" (in đậm) */
+    font-weight: bold;
+
+    /* Font-size: giúp cho chỉnh kích thước của chữ tương ứng. */
+    /* Đơn vị đo của giá trị truyền vào phải là px */
+    font-size: 20px;
+
+    /* Font-style: giúp cho kiểu chữ mọi người có "độ ngả" (in nghiêng) */
+    font-style: italic;
+
+    /* Font-family: giúp cho mọi người tạo được "dáng chữ" mà mọi người cần */
+    font-family: 'Times New Roman', Times, serif;
+
+    /* line-height: chiều cao dòng tương ứng. */
+    line-height: 200px;
+
+    /*
+        text-align: sắp xếp bố cục tương ứng:
+        VD: left (mặc định): nằm bên trái
+            center: nằm ở giữa (không căn đều 2 bên)
+            right: nằm ở bên phải
+            justify: căn đều 2 bên
+    */
+
+    text-align: center;
+}
