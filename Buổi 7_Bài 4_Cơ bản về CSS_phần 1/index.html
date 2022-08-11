@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Học về CSS</title>
+
+    <style>
+        /*
+            selectors {
+                property: value;
+            }
+            1. selectors: những thẻ tương ứng mà mọi người muốn CSS.
+            VD: p, div, img, a,...
+            2. property: thuộc tính.
+            VD: color, background-color,...
+            3. value: giá trị tương ứng của thuộc tính đấy.
+            VD: red, green, blue,...
+        */
+
+        span {
+           color: green;
+           background-color: brown;
+        }
+    </style>
+
+    <!-- Đường dẫn link chỉ dành cho đường dẫn css ở trong file html -->
+    <link rel="stylesheet" href="./styles.css">
+
+</head>
+<body>
+    <!-- Mặc định của h2: cỡ chữ to, in đậm, màu đen -->
+    <h2>Xin chào các bạn lớp 7</h2>
+    <!-- Mục đích chính của đoạn này là cho chữ sang màu xanh nước biển -->
+    <h2 style="color: red;">Xin chào các bạn lớp 7</h2>
+
+    <!-- style="color: blue;" -->
+    <!-- 
+        style: quy định cho trang web được biết là chỗ này viết CSS (phong cách)
+        thuộc tính="giá trị"
+        VD: src="#", href="#", class="heading", id="title"
+        style="giá trị" => giá trị <=> color:blue;
+        color: blue tương đương màu sắc tương ứng là màu xanh
+    -->
+
+    
+    <!-- Có bao nhiêu cách mọi người đưa được CSS vào trang web: 3 cách -->
+    <!-- 1. CSS Inline: bên trong của thẻ, tức là nó sẽ đưa CSS trực tiếp vào các thẻ tương ứng -->
+    <!-- Nội dung muốn: màu chữ màu đỏ, màu nền là màu xanh-->
+    <p style="color: red; background-color: greenyellow;">Thẻ này mô tả đoạn văn</p>
+
+
+    <!-- 2. CSS Internal: bên trong của trang web, bắt đầu băng cặp thẻ style bên trong thẻ head -->
+    <span>Đây là thẻ mô tả của thẻ span nàyyyy</span>
+    <hr>
+
+    <!-- 3. CSS External: bên ngoài của trang web -->
+    <a href="#">Bấm vào đây để vào instagram</a>
+
+</body>
+</html>

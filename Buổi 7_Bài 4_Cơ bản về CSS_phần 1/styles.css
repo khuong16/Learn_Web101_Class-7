@@ -1,0 +1,23 @@
+/* Thuộc tính color, background-color,.. (bất kì thuộc tính liên quan đến quan đến màu sắc) 
+    nó sẽ nhận vào 3 kiểu giá trị màu:
+
+    1. Viết tên màu bằng tiếng anh ra:
+    VD: red, green, yellow, brown,...
+
+    2. Nhận vào mã màu: #000000, #FFFFFF, ....
+    VD: red <=> #FF0000
+
+    3. RGB(red, green, blue): dải màu.
+    VD: rgb(255,123,0)
+    tương ứng: red: 255, green: 123, blue: 0
+
+    Thêm: Opacity(trong suốt): 0 -> 1
+    Mặc định của nó là 1 (đậm nhất, ko có trong suốt) và nó sẽ giảm từ 1 về 0.
+    RGB(red, green, blue, opactiy).
+
+*/
+
+a {
+    color: #00ff1a;
+    background-color: #FF0000;
+}
