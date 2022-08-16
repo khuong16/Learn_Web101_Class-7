@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS đơn giản nhất</title>
+
+    <style>
+        h1 {
+            background-color: blue;
+            height: 100px;
+        }
+
+        div {
+            /* width: 400px; */
+            height: 100px;
+        }
+
+        h2 {
+            background-color: greenyellow;
+            display: inline;
+        }
+
+        /* display */
+
+        span {
+            background-color: chocolate;
+            height: 100px;
+            width: 200px;
+            display: inline-block;
+            /* display: block; */
+        }
+
+        h3 {
+            /* Chiều rộng của thuộc tính border bằng đúng chiều rộng của phần tử cha chứa nó */
+            border: 2px solid green;
+            /* Border-width: quy định độ dày của viền của boder */
+            border-width: 5px;
+
+            /* Border-style: kiểu của border tương ứng*/
+            border-style: dashed;
+
+            /* Border-color: màu sắc của border */
+            border-color: brown;
+
+            /* border: border-width border-style border-color*/
+        }
+
+        .title {
+            height: 200px;
+            width: 200px;
+            background-color: red;
+
+            border-width: 6px;
+            border-style: dotted;
+            border-color: blueviolet;
+
+            border: 6px solid blueviolet;
+
+            /* overflow: là thuộc tính tương tác giúp ẩn/hiện cho chữ */
+            /* (mặc định) visible: hiển thị đủ hết nội dung */
+            /* hidden: nội dung nào tràn ra ngoài sẽ ẩn đi, hiển thị nội dung đủ */
+            /* scroll: thanh kéo, giúp mọi người bao quát hết nội dung cần */
+            overflow: hidden;
+
+            margin-top: 20px;
+            margin-left: 50px;
+
+            padding-top: 20px;
+            padding-left: 20px;
+
+            margin-bottom: 50px;
+        }
+
+        /* margin: khoảng cách giữa 2 phần tử với nhau */
+        /* padding: khoảng cách giữa nội dung và phần tử */
+
+        /* Bài toán 1: cái hộp đỏ cách cái hộp nâu là 20px */
+        /* Bài toán 2: nội dung chữ của hộp đỏ, cách hộp đỏ là 20px */
+        
+        a {
+            margin: 40px;
+            /* text-decoration: xóa dấu gạch chân của thẻ a đi */
+            text-decoration: none;
+            color: darkkhaki;
+        }
+
+        /* a:hover: khi rê con trỏ chuột lên thì sẽ đổi màu thẻ a */
+        a:hover {
+            color: red;
+        }
+
+        a:active {
+            color: brown;
+        }
+
+        a:focus {
+            color: black;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- block: chiều rộng nó sẽ bằng chiều rộng phần tử cha của chứa nó -->
+    <h1>Xin chào các bạn lớp 7</h1>
+
+    <div>
+        <h2>Xin chào các bạn lớp 7.1</h2>
+        <h2>Xin chào các bạn lớp 7.1</h2>
+        <h2>Xin chào các bạn lớp 7.1</h2>
+    </div>
+
+    <h3>Heading h3</h3>
+
+    <!--inline: các chữ nằm trên cùng 1 dòng -->
+    <!-- inline: chiều rộng bằng đúng nội dung nó chứa -->
+    <!-- inline hạn chế CSS. Cụ thể là: width, height -->
+    <span>
+        Đoạn văn mô tả quả dứa
+    </span>
+    <span>
+        Đoạn văn mô tả quả dưa hấu
+    </span>
+    <span>
+        Đoạn văn mô tả quả xoài
+    </span>
+
+    <div class="title">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa sit libero recusandae architecto nemo suscipit quisquam ut reiciendis a deserunt possimus vero odit dolor iste, repudiandae numquam? Corrupti, consequatur animi.
+        Lorem ipsum dolor sit amet
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis saepe nemo neque hic tenetur quos ducimus culpa odio consequatur deserunt, velit pariatur voluptas quae error fugiat ratione voluptatem ab dolore!
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia earum quibusdam error soluta. Doloremque error aut cum iste minus vero, provident similique magnam maxime laborum ipsam deserunt tempora esse expedita?
+    </div>
+
+
+    <a href="#">Đây là thẻ đường dẫn instagram</a>
+</body>
+</html>
