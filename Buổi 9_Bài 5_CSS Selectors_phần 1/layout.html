@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+
+    <style>
+        h2 {
+            /* float: left; */
+        }
+
+        div {
+            /* giá trị grid giúp mọi người chia cột ra */
+            /* display: grid; */
+            /* giúp mọi người biết là được chia bao nhiêu cột */
+            /* grid-template-columns: 1fr 1fr 1fr; */
+
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <!-- Khi mọi người muốn phần tử nằm trên cùng 1 dòng thì nó sẽ có:
+        1. float: left
+        2. display: inline-block
+    -->
+
+    <div>
+        <h2>Đây là quả dưa hấu</h2>
+        <h2>Đây là quả dưa chuột</h2>
+        <h2>Đây là quả dưa nhãn</h2>
+    </div>
+</body>
+</html>

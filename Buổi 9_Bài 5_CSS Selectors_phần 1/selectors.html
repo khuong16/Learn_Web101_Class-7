@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style> 
+        /* Thẻ span của mình có kiểu là : chữ màu xanh lá cây, in đậm, cỡ chữ 30px */
+        /*
+            selectors {
+                attribute: value;
+            }
+            selectors: những 'phần tử' mà mọi người muốn nó được CSS. Có 3 kiểu selector chính
+            1. Tag(thẻ): h2, h1, div, span, a,...
+            2. Class: đặt tên của thẻ tương ứng, đặt được nhiều tên class TRÙNG VÀ KHÁC NHAU.
+            3. ID: đặt tên của thẻ tương ứng, KHÔNG ĐƯỢC TRÙNG, VÀ NÓ LÀ DUY NHẤT.
+
+            Khi CSS cho class thì nó sẽ có dấu "." + tên class
+            Khi CSS cho id thì nó sẽ có dấu "#" + tên id
+        */
+        span {
+            color: green;
+            font-weight: bold;
+            font-size: 30px;
+        }
+
+        h2 {
+            color: blue;
+        }
+
+       
+
+        /* thẻ p đầu tiên là màu xanh thôi, còn lại vẫn là màu đen */
+        #descId1 {
+            color: blueviolet;
+        }
+
+        #descId3 {
+            color: chocolate;
+        }
+
+        .desc {
+
+        }
+
+        .zalo {
+            background-color: aqua;
+        }
+
+        /* tôi sẽ lấy thẻ a với thuộc tính là href với giá trị là zalo.com để tôi CSS cho chữ màu đỏ*/
+        a[href="zalo.com"] {
+            color: red;
+        }
+
+        .youtube {
+            background-color: blueviolet;
+        }
+
+        a[href="youtube.com"] {
+            font-size: 30px;
+        }
+
+        /* Selectors "*": đại diện cho toàn bộ thẻ trong trang web */
+        * {
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    </style>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Có 3 cách viết CSS: -->
+    <!-- Cách 1: CSS Inline: viết thẳng css vào thẻ tương ứng -->
+    <!-- Cách 2: CSS Internal: viết css trong file HTML (dưới cặp thẻ title) -->
+    <!-- Cách 3: CSS External: viết css ra 1 file riêng, rồi nhúng nó vào file HTMl cần -->
+    <h2 style="color: red;">Xin chào các bạn</h2>
+    <span>Đây là mô tả quả dứa</span>
+    <hr>
+    <a href="facebook.com">Đây là đường dẫn tới facebook</a>
+
+    <!-- Khi làm về CSS, nên làm CSS Internal và External, và CHỈ LÀM 1 TRONG 2 CÁI, KHÔNG NÊN LÀM CẢ HAI -->
+
+    <div class="lesson lesson1" id="lessonId1">
+        Lesson1
+    </div>
+    <div class="lesson lesson2"  id="lessonId2">
+        Lesson2
+    </div>
+    <div class="lesson lesson3"  id="lessonId3">
+        Lesson3
+    </div>
+
+    <p class="desc" id="descId1">Đoạn văn mô tả quả dưa hấu</p>
+    <p class="desc" id="descId2">Đoạn văn mô tả quả dưa hấu</p>
+    <p class="desc" id="descId3">Đoạn văn mô tả quả dưa hấu</p>
+
+    <a href="instagram.com" class="insta">Đây là đường dẫn tới Instagram</a>
+    <a href="zalo.com" class="zalo">Đây là đường dẫn tới Zalo</a>
+    <a href="youtube.com" class="youtube">Đây là đường dẫn tới Youtube</a>
+
+</body>
+</html>
