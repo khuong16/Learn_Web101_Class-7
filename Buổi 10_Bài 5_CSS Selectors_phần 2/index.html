@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background Image</title>
+    <style>
+      h1 {
+        font-size: 3em;
+      }
+
+      h2 {
+        font-size: 2.5em;
+      }
+
+      h3 {
+        font-size: 2em;
+      }
+
+      h4 {
+        font-size: 1.5em;
+      }
+
+      h5 {
+        font-size: 1.25em;
+      }
+
+      h6 {
+        font-size: 1em;
+      }
+
+      .mountain {
+        width: 300px;
+        height: 300px;
+        border: 1px solid red;
+        /* border: border-width border-style border-color */
+
+        /* background-image : hiển thị đường dẫn hình ảnh thông qua giá trị url() */
+        background-image: url(https://images.unsplash.com/photo-1661178507244-08572a5d5aab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80);
+
+        /* Khi ảnh to quá: */
+        /* background-size: nó sẽ hiển thị đủ độ dài, độ cao của ảnh trong khung tương ứng */
+        background-size: cover;
+
+        /* Khi ảnh nhỏ quá: */
+        /* background-repeat: nó sẽ giúp ảnh ko bị lặp lại khi ảnh nhỏ quá */
+        background-repeat: no-repeat;
+      }
+
+      h1 {
+        /* rgb(red, green, blue) */
+        /* rgba(red, green, blue, opacity) */
+        color: rgba(0, 0, 255, 0.512);
+      }
+
+      /* CSS cho cái chữ cái đầu tiên */
+      p::first-letter {
+        color: blue;
+        font-size: 50px;
+        font-weight: bold;
+      }
+
+      /* CSS cho dòng đầu tiên */
+      p::first-line {
+        color: brown;
+        font-variant: small-caps;
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+        background image: nền + ảnh
+    -->
+
+    <!-- <img src="https://images.unsplash.com/photo-1661226613879-38519f4e56a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" 
+        alt="Hình ảnh ngọn núi"> -->
+
+    <!-- box model -->
+    <div class="mountain"></div>
+
+    <h1>Đây là thẻ tiêu đề</h1>
+    <h2>Đây là thẻ tiêu đề</h2>
+    <h3>Đây là thẻ tiêu đề</h3>
+    <h4>Đây là thẻ tiêu đề</h4>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui nemo aliquid rerum doloribus ipsam blanditiis, voluptatibus, iure quae dolore porro reiciendis vero illo cumque, natus ullam laudantium vel in aperiam?</p>
+  </body>
+</html>
