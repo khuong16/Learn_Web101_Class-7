@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* CSS table */
+         table {
+            border-radius: 20px;
+            border-collapse: collapse;
+            border-bottom: 2px solid green;
+            box-shadow: 8px 8px 8px 8px whitesmoke;
+        }
+
+        /* CSS td (content) table */
+        th,
+        td {
+            text-align: left;
+            padding: 16px;
+        }
+
+        /* CSS tr default table */
+        tr{
+            background-color: whitesmoke;
+            font-weight: bold;
+            color: green;
+        }
+
+        /* CSS tr even table */
+        tr:nth-child(even) {
+            background-color: white;
+            font-weight: normal;
+            color: black;
+        }
+
+        /* CSS heading table */
+        tr th {
+            background-color: green;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <!-- nth:child(1)-->
+        <tr>
+            <!-- th: thẻ tiêu đề của bảng tương ứng. -->
+            <th>Rank</th>
+            <th>Name</th>
+            <th>Point</th>
+            <th>Team</th>
+        </tr>
+        <!-- nth:child(2)-->
+        <tr>
+            <!-- th: thẻ mô tả nội dung của bảng tương ứng -->
+            <td>1</td>
+            <td>Domenic</td>
+            <td>88,110</td>
+            <td>dcode</td>
+        </tr>
+        <!-- nth:child(3)-->
+        <tr>
+            <td>2</td>
+            <td>Sally</td>
+            <td>72,400</td>
+            <td>Student</td>
+        </tr>
+        <!-- nth:child(4)-->
+        <tr>
+            <td>3</td>
+            <td>Nick</td>
+            <td>52,300</td>
+            <td>dcode</td>
+        </tr>
+    </table>
+</body>
+</html>
