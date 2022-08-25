@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu</title>
+
+    <style>
+      li {
+        /* xóa đi kí hiệu mặc định của thẻ li tương ứng */
+        list-style-type: none;
+        display: inline-block;
+        margin-right: 10px;
+        font-weight: bold;
+        font-size: 25px;
+      }
+
+      a {
+        text-decoration: none;
+        color: chocolate;
+      }
+
+      a:hover {
+        color: aqua;
+      }
+
+      /* CSS nav */
+      nav {
+        box-sizing: border-box;
+        border: 1px solid #06425c;
+        color: #06425c;
+        background: #ffffff;
+        padding-left: 20px;
+      }
+
+      nav a {
+        box-sizing: border-box;
+        display: inline-block;
+        line-height: 50px;
+        height: 60px;
+        color: #ffffff;
+        background-color: #486b02;
+        text-decoration: none;
+        margin: 1% 5% 1% 0;
+        padding: 1% 5%;
+        border-radius: 25px;
+      }
+
+      .current {
+        background-color: #800000;
+      }
+
+      nav a:hover {
+        color: #000000;
+        border-radius: 0;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <!-- Mặc định của HTML -->
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a href="#">Outsourcing</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+
+    <!-- HTML 5: chỉ bắt buộc khi tạo ra menu thì chỉ có cặp thẻ nav -->
+    <nav>
+      <a href="#">Home</a>
+      <a href="#" class="current">Photos</a>
+      <a href="#">Recipes</a>
+      <a href="#">Contact</a>
+    </nav>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+
+    <style>
+        table {
+            width: 300px;
+            /* border-radius: bo tròn các góc của bảng */
+            /* border-radius: 10px; */
+
+            border-top-left-radius: 10px;
+        }
+
+        /* tr:nth-child(value) : CSS cho từng dòng. 
+            value: 1,2,3,4,...n
+            
+            => CSS cho từng dòng (màu sắc, sắp xếp phần tử,.. )
+        */
+        /* tr:nth-child(2) {
+            background-color: brown;
+            color: white;
+        }
+
+        tr:nth-child(3) {
+            background-color: chocolate;
+            color: white;
+        }
+
+        tr:nth-child(4) {
+            background-color: darkgoldenrod;
+            color: white;
+        } */
+
+        /* value = odd => CSS cho toàn bộ những dòng có bắt đầu bằng số thứ tự là số lẽ: 1,3,5,7,9,..*/
+        tr:nth-child(odd) {
+            background-color: brown;
+            color: white;
+        }
+
+        /* value = event => CSS cho toàn bộ những dòng có bắt đầu bằng số thứ tự là số chẵn: 2,4,6,8,10,... */
+        tr:nth-child(even) {
+            background-color: darkgoldenrod;
+            color: white;
+        }
+
+        .row-3 {
+            /* phần tử đó sẽ mất luôn, KHÔNG chiếm diện tích chiếm đóng nữa */
+            /* display: none; */
+
+            /* Phần tử đó cũng sẽ mất luôn, VẪN chiếm diện tích chiếm đóng*/
+            visibility: hidden;
+        }
+
+    </style>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th>STT</th>
+            <th>Name</th>
+            <th>DOB</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Michale</td>
+            <td>19/02/1997</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>John</td>
+            <td>20/10/1999</td>
+        </tr>
+        <tr class="row-3">
+            <td>3</td>
+            <td>Hub</td>
+            <td>25/07/1995</td>
+        </tr>
+    </table>
+</body>
+</html>
