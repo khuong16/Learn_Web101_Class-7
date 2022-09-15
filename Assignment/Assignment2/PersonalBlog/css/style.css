@@ -1,0 +1,62 @@
+*, html, body {
+    font-family: 'Dancing Script', cursive;
+    font-size: 16px;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    color: rgb(240, 181, 105);
+}
+
+h1 {
+    font-size: 3em;
+}
+h2 {
+    font-size: 2.5em;
+}
+h3 {
+    font-size: 2em;
+}
+h4 {
+    font-size: 1.5em;
+}
+h5 {
+    font-size: 1em;
+}
+h6 {
+    font-size: 0.5em;
+}
+
+.banner {
+    height: 300px;
+    width: 100%;
+    background-image: url('../images/banner.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.heading {
+    color: #fff;
+    background-color: rgba(250, 235, 215, 0.448);
+    position: relative;
+    top: 235px;
+    text-align: center;
+}
+
+ol {
+    display: none;
+}
+
+.menu li, .menu li a {
+    display: inline-block;
+    color: rgb(240, 181, 105);
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+.menu li {
+    border-bottom: 1px solid ;
+}
+
+.menu li a:hover {
+    color: aqua;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hiểu về position</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        font-family: "Dancing Script", cursive;
+      }
+
+      .box {
+        margin-bottom: 200px;
+      }
+      .box1,
+      .box2,
+      .box3,
+      .box4 {
+        width: 150px;
+        height: 150px;
+        display: inline-block;
+        text-align: center;
+      }
+
+      .box1 {
+        background-color: red;
+      }
+
+      /*   
+            relative: linh hoạt. 
+            absoulte: cố định.
+        */
+      .box2 {
+        background-color: green;
+        position: relative;
+        top: 50px;
+        left: 50px;
+      }
+
+      .box3 {
+        background-color: brown;
+      }
+
+      .box4 {
+        background-color: hotpink;
+      }
+
+      .banner {
+        background-image: url("https://images.unsplash.com/photo-1661881781609-e2b6adc0b27b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80");
+        width: 100%;
+        height: 500px;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        margin-bottom: 70px;
+      }
+
+      .content {
+        font-size: 45px;
+        font-weight: bold;
+        color: white;
+        background-color: rgba(255, 255, 0, 0.158);
+        text-align: center;
+        position: relative;
+        top: 410px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Minh họa position bằng box -->
+    <div class="box">
+      <div class="box1">Box1</div>
+      <div class="box2">Box2</div>
+      <div class="box3">Box3</div>
+      <div class="box4">Box4</div>
+    </div>
+
+    <!-- banner -->
+    <div class="banner">
+      <div class="content">Chi's Cake</div>
+    </div>
+  </body>
+</html>
