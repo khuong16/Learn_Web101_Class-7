@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu về DOM</title>
+
+    <!-- Đây là bắt đầu code của CSS  -->
+    <style>
+        /* CSS  */
+    </style>
+
+</head>
+<body>
+    <!-- Bắt đầu code HTML-->
+    <div class="heading">
+        <h1>Hello</h1>
+        <p id="minh">Lorem ipsum dolor sit amet.</p>
+    </div>
+    <!-- Kết thúc code HTML -->
+
+
+    <!-- Bắt đầu code Javascript -->
+     <!-- Đây là bắt đầu code của Javascript -->
+    <script>
+        // alert : in ra câu thông báo tương ứng.
+        //alert("Hello xin chào các bạn lớp 6- 7");
+
+        //prompt("Xin mời bạn nhập tên ....");
+
+        // document.write: in ra dòng văn bản.
+        // document.write("Trời hôm nay đẹp quá");
+
+        // document.getElementById("id"): đơn giản nó sẽ lấy cái thẻ có id là "id" tương ứng.
+        // innerHTML: thay đổi nội của thẻ đó.
+        document.getElementById("minh").innerHTML = "Xin chào các bạn lớp 6 -7"; 
+
+        console.log("Xin chào mọi người nhaaa");
+
+
+        // Ví dụ khi làm việc với biến
+        // khởi tạo biến tên là name.
+        var name;
+
+        name = prompt("What is your name?");
+
+        // in ra biến name
+        document.write(name);   
+
+        // in ra biến name sử dụng thẻ h1.
+        document.write("<h1>" + name + "</h1>");
+
+    </script>
+</body>
+</html>
