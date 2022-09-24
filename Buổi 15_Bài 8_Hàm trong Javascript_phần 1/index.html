@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Học về hàm trong Javascript</title>
+</head>
+<body>
+    <h1>Hello</h1>
+
+    <script>
+
+        // Hàm này sẽ xử lý là in ra ngoài màn hình là 100 chữ 'Hello'.
+        // hàm này sẽ xử lý in ra màn hình console.log là chữ 'Hello'
+        function hello1() {
+            // xử lý việc in ra ngoài màn hình console.log
+            console.log('Abc xyz');
+        }
+
+        // gọi hàm hello này.
+        hello1(); // abc xyz
+        hello1(); // abc xyz
+        hello1();
+        hello1();
+
+        console.log('----------------------------------------')
+
+        // hàm có tham số: tham số là biến (tên biến)
+        // var mess -> giá trị mình ko có.
+        function hello2(mess) {
+            console.log(mess);
+        }
+
+        // gọi hàm hello2 tương ứng.
+        // mess = 'Xin chào các bạn'
+        hello2('XIn chào các bạn'); 
+
+        // mess = 'Quả dưa hấu'
+        hello2('Quả dứa hấu');
+        
+        // mess = 'Bánh xe ô tô'
+        hello2('Bánh xe ô tô'); 
+
+        console.log('----------------------------------------')
+
+
+        console.log('Hi');
+        console.log('Hi');
+        console.log('Hi');
+        console.log('Hi');
+        console.log('Hi');
+        console.log('Hi');
+        console.log('Hi');
+
+
+        // In ra tab 'console' ra là tầm 100 chữ "Helooo"
+
+        // In ra tab 'console' ra là tầm 100 chữ "Trời hôm nay đẹp quá"
+
+        // hàm ko tham số.
+        function tenHam() {
+            // xử lý nhứng cái chức năng.
+            // code mà mọi người xử lý.
+            // console.log()
+        }
+
+        // hàm có tham số.
+        function tenHam(thamSo) {
+            // xử lý nhứng cái chức năng.
+            // code mà mọi người xử lý.
+            // console.log()
+        }
+
+
+        console.log("----------------- Tính tổng 2 số -------------------");
+        // Bài toán số 2: tính tổng 2 số (giá trị của 2 số này có biến đổi) -> xây dựng hàm
+        var x = 8 + 1;
+        var y = 10 + 1;
+        var z = -100 + 1;
+        var k = -1982198319203 + 1;
+        var l = 7272 + 1;
+        //console.log(x); 
+
+        // 1, Khi giá trị của mọi người có không sự thay đổi giá trị -> hàm không có tham số.
+        // 2. Khi giá trị của mọi người có sự thay đổi giá trị -> hàm có tham số.
+
+        function sum1(a, b) {
+            var total = a + b;
+            console.log(total);
+
+            // console.log(a + b);
+        }
+
+        // gọi hàm tương ứng:
+        //sum1(900, 300); // 1200
+
+        // giá trị trả về.
+        // return: dữ liệu số, dữ liệu chuỗi, dữ liệu boolean, dữ liệu đối tượng,...
+        // return nó sẽ giống console.log.
+
+        function sum2(a, b) {
+            var total = a + b;
+            return total; // Hàm sum2 nó sẽ trả về biến total tương ứng.
+        }
+
+        // gọi hàm tương ứng.
+        // khi mọi người dùng return trong hàm thì khi GỌI HÀM thì phải dùng console.log để in ra ngoài tab 'console'.
+        console.log(sum2(90, 6));   // 96
+
+    </script>
+</body>
+</html>
