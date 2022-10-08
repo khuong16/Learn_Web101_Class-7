@@ -21,19 +21,58 @@
         // }
 
         // điều kiện: true - false
-        // Nếu điểm mọi người qua 5 điểm thì sẽ qua môn.
-        // nếu điểm mọi người nhỏ hơn và bằng 5 thì trượt môn.
+        // 1.Nếu điểm mọi người qua 5 điểm thì sẽ qua môn.
+        // 2.nếu điểm mọi người nhỏ hơn và bằng 5 thì trượt môn.
         // điểm > 5 
 
+        // var mark = 5;
+        // if(mark > 5) { // 10 > 5 => true
+        //     console.log("Bạn được 5 điểm");
+        // } 
+        // // lấy giá trị TỪ 5  đổ xuống (có lấy giá trị 5)
+        // else {
+        //     console.log("xin lỗi, bạn đã trượt môn rồi");
+        // } 
+
+        // Bài toán: 
+        // 1.Điểm >= 8: Giỏi.
+        // 2.Điểm: điểm >= 6: khá.
+        // 3.Điểm: điểm >=4 : TB
+        // 4.Điểm: điểm < 4 : Yếu
+
         var mark = 5;
-        if(mark > 5) { // 10 > 5 => true
-            console.log("Bạn được 5 điểm");
-        } 
-        // lấy giá trị TỪ 5  đổ xuống (có lấy giá trị 5)
-        else {
-            console.log("xin lỗi, bạn đã trượt môn rồi");
-        } 
+        if(mark >= 8) {
+            console.log("Giỏi");
+        } else if(mark >= 6) {
+            console.log("Khá");
+        } else if(mark >= 4) {
+            console.log("TB");
+        } else { // mark < 4
+            console.log("Yếu");
+        }
+
+        // if: điều kiện đầu tiên.
+        // else if: điều kiện giữa.
+        // else: điều kiện cuối
         
+
+        // kết hợp vòng lặp với câu lệnh điều kiện.
+        // In ra giá trị là từ 1 -> 10 ra ngoài màn hình.
+        // TH1: 1 -> 10, Đến giá trị số 5 thì mình dừng lại, ko in ra nữa.
+        // TH2: 1 -> 10, ko in ra giá trị 5, nhưng những giá trị sau đó sẽ vẫn in.
+
+        // for(var index = 1; index <= 10; index++) {
+        //     if(index == 5) {
+        //         // dừng lại vòng lặp.
+        //         // break;
+
+        //         // bỏ qua giá trị đấy, nhưng vòng lặp vẫn tiếp tục.
+        //         // tiếp tục
+        //         continue;
+        //     }
+        //     console.log("Giá trị: ",index);
+        // }
+
 
     </script>
 </body>
