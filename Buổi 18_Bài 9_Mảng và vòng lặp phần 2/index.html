@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Học và làm Javascript</title>
+</head>
+<body>
+    <h1>Làm việc với Javascript</h1>
+
+    <script>
+        // console.log('Hello các bạn');
+        var name = 'Khương';
+        name = 'Minh';
+
+        var number = 2;
+
+        // 0 ... n - 1
+        // 0 ... 4  
+
+        // chuỗi ban đầu
+        var hoaQua = ['Quả chuối', 'Quả na', 'Quả cam', 'Quả dưa hấu', 'Quả xoài'];
+
+        // index: chỉ mục.
+        // in ra màn hình: Quả chuối.
+        // console.log('Giá trị phần tử đầu tiên là: ', hoaQua[0]);
+        // console.log('Giá trị phần tử thứ hai là: ', hoaQua[1]);
+        // console.log('Giá trị phần tử thứ ba là: ', hoaQua[2]);
+        // console.log('Giá trị phần tử thứ tư là: ', hoaQua[3]);
+        // console.log('Giá trị phần tử cuối cùng là: ', hoaQua[4]);
+
+        // vòng lặp: lặp giá trị của mọi người cần, cụ thể áp dụng cho mảng.
+
+        // index++ <=> index = index + 1
+
+        // index <= số lượng phần tử - 1.
+        // index < số lượng phần tử.
+
+        for(var index = 0 ; index <= hoaQua.length - 1 ; index++) {
+            // xử lý code
+            console.log("Phần tử hoa quả: ", hoaQua[index]);
+        }
+        // for-in, for-of, for-each,...
+
+        // B1: index = 0
+        // B2: 0 <= 4 => true
+        // B3: thực thi code => hoaQua[0] // quả chuối
+
+        // B1: index++ => 0 + 1 = 1 => index = 1
+        // B2: 1 <= 4 => true
+        // B3: thực thi code => hoaQua[1] // quả na
+
+        // B1: index++ => 1 + 1 = 2 => index = 2
+        // B2: 2 <= 4 => true
+        // B3: thực thi code => hoaQua[2] // Quả cam
+
+        // B1: index++ => 2 + 1 = 3
+        // B2: 3 <= 4 => true
+        // B3: thực thi code => hoaQua[3] // Quả dưa hấu
+
+        // B1: index++ => 3 + 1 = 4
+        // B2: 4 <= 4 => true
+        // B3: thực thi code => hoaQua[4] // Quả xoài.
+
+        // B1: index++ => 4 + 1 = 5
+        // B2: 5 <= 4 => false => ko thực thi đoạn code bên trong nữa.
+
+    </script>
+</body>
+</html>

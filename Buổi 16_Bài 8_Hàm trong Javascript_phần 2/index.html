@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Học về hàm</title>
+
+</head>
+<body>
+    <!-- HTML -->
+    <h1 id="name">Xin chào các bạnaaa</h1>
+
+    <p id="demo" oncopy="copyContent()">This is a paragraph</p>
+
+    <button type="button" onclick="displayDate();">Display Date</button>
+
+    <!-- Lưu ý 2 cái: onclick và onchange -->
+    <!-- xử lý về code click -->
+    <button onclick="clickChangeContent('trời hôm nay đẹp quá')">Bấm vào đây để thay đổi trời đẹp quá</button>
+    <button onclick="clickChangeContent('trời hôm nay mưa quá')">Bấm vào đây để thay đổi trời mưa quá</button>
+
+    <!-- Javascript: Internal Javascript -->
+    <script>
+        // khai triển câu lệnh ..
+
+        // đổi từ 'Xin chào các bạn' sang thành 'minh'
+        //document.getElementById('name').innerHTML = 'minh';
+
+        // click vào nút ấn sẽ thay đổi nội dung.
+        function clickChangeContent(abc) {
+            document.getElementById('name').innerHTML = abc;
+            // console.log('1');
+        }
+
+        function displayDate() {
+            document.getElementById("demo").innerHTML = Date();
+        }
+
+        function copyContent() {
+            alert('Bạn đã copy nội dung');
+        }
+    </script>
+
+    <!-- Javascript: External Javascript -->
+    <!-- <script src="./index.js"></script> -->
+</body>
+</html>
