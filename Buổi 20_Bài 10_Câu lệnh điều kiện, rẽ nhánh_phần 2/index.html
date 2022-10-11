@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Học về câu lệnh điều kiện, rẽ nhánh</title>
+</head>
+<body>
+    
+    <script>
+        // console.log('Javascript chạy thành công');
+
+        // switch .. case: giá trị (==) 
+        // break.
+        // điểm 5 in ra thông báo là điểm của bạn là 5.
+        var mark = 10;
+
+        // key: markư
+        switch(mark) {
+            // xử lý code.
+            // case: trường hợp
+            case 5: // mark == 5 // 10 == 5=> false
+                // xử lý code của thằng case 5
+                console.log('Điểm của bạn là 5 điểm');
+                // kết thúc xử lý code của thằng case 5
+                break;
+            
+            case 9: //mark == 9 // 10 == 9 => false
+                // xử lý code của thằng case 9
+                console.log('Điểm của bạn là 9 điểm');
+                break;
+            
+            default:
+                console.log('Không có giá trị phù hợp');
+        }
+        
+    </script>
+</body>
+</html>
