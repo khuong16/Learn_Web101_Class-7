@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 03</title>
+</head>
+<body>
+    <h1>Xin chào tới assignment 03</h1>
+
+    <form name="myForm" onsubmit="return check()">
+        <label for="name">Your name:
+        <input type="text" id="name" name="name" placeholder="Please fill your full name"></label><br><br>
+        <p id="errorName" style="color: red; display: none;"></p>    
+
+        <label for="name">Your email:
+        <input type="text" id="email" name="email" placeholder="Please fill your email"></label><br><br>
+        <p id="errorEmail" style="color: red; display: none;"></p>    
+        <br>
+
+        <input type="submit" value="Send message">
+    </form>
+
+    <!-- Kết nối với javascript -->
+    <script src="index.js"></script>
+</body>
+</html>

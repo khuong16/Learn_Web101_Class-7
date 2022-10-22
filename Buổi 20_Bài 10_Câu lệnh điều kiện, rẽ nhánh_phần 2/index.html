@@ -16,23 +16,60 @@
         // điểm 5 in ra thông báo là điểm của bạn là 5.
         var mark = 10;
 
+        // Ctrl + /
+
         // key: markư
-        switch(mark) {
-            // xử lý code.
-            // case: trường hợp
-            case 5: // mark == 5 // 10 == 5=> false
-                // xử lý code của thằng case 5
-                console.log('Điểm của bạn là 5 điểm');
-                // kết thúc xử lý code của thằng case 5
-                break;
+        // switch(mark) {
+        //     // xử lý code.
+        //     // case: trường hợp
+        //     case 5: // mark == 5 // 10 == 5=> false
+        //         // xử lý code của thằng case 5
+        //         console.log('Điểm của bạn là 5 điểm');
+        //         // kết thúc xử lý code của thằng case 5
+        //         break;
             
-            case 9: //mark == 9 // 10 == 9 => false
-                // xử lý code của thằng case 9
-                console.log('Điểm của bạn là 9 điểm');
-                break;
+        //     case 9: //mark == 9 // 10 == 9 => false
+        //         // xử lý code của thằng case 9
+        //         console.log('Điểm của bạn là 9 điểm');
+        //         break;
             
+        //     // khi mọi người không có giá trị nào phù hợp trong case thì sẽ chạy default.
+        //     default:
+        //         console.log('Không có giá trị phù hợp');
+        // }
+
+        // ví dụ: dữ liệu ban đầu: ngày = 0 => chủ nhật, ngày = 1 => thứ hai,.. 
+
+        var day = 10;
+
+        switch(day) {
+            // xử lý code theo case.
+            case -5:
+            case -1:
+            case 0:
+                console.log('Đây là chủ nhật');
+                break;
+            case 1:
+                console.log('Đây là thứ hai');
+                break;
+            case 2:
+                console.log('Đây là thứ ba');
+                break;
+            case 10:
+            case 3:
+                console.log('Đây là thứ tư');
+                break;
+            case 4:
+                console.log('Đây là thứ năm');
+                break;
+            case 5:
+                console.log('Đây là thứ sáu');
+                break;
+            case 6:
+                console.log('Đây là thứ bảy');
+                break;
             default:
-                console.log('Không có giá trị phù hợp');
+                console.log('Giá trị bạn nhập phải trong khoảng 0 - 6');
         }
         
     </script>

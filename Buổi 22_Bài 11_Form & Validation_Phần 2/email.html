@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiểm tra email</title>
+</head>
+<body>
+    <form>
+
+        <label>Preferred email address:  
+        <input type="email" id="email_addr" name="email1" value="me@me.com" required></label><br><br>
+    
+        <label>Repeat email address:  
+        <input type="email" id="email_repeat" name="email2" required onchange="check()"></label><br><br>
+    
+        <input type="submit" value="Confirm Emails!" onclick="return check();">
+    
+    </form>
+
+    <script>
+        // ==, != 
+
+        function check() {
+            var email1 = document.getElementById("email_addr");
+            var email2 = document.getElementById("email_repeat");
+            if (email1.value != email2.value) {
+                alert("The two emails must match!!");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</body>
+</html>
